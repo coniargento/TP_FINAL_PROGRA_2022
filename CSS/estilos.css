@@ -1,0 +1,12 @@
+#pantalla1{
+    text-align: center;
+    display: block;
+}
+
+.jugar{
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+}
