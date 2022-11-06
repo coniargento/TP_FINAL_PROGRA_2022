@@ -1,6 +1,12 @@
 #pantalla1{
+    padding: 250px;
     text-align: center;
     display: block;
+
+}
+
+h1, h2, h3 {
+    color: white;
 }
 
 .jugar{
@@ -11,7 +17,14 @@
     margin: 1em;
 }
 
-section {
-    background-image: url("..IMG/fondo.jpg");
+body {
+    height: 600px;
+    width: auto;
+    background-image: url("../IMG/fondo.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    
 }
+
 
