@@ -5,6 +5,13 @@
 
 }
 
+#pantalla2{
+    padding: 250px;
+    text-align: center;
+    display: block;
+
+}
+
 h1, h2, h3 {
     color: white;
 }
