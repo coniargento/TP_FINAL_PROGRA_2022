@@ -13,6 +13,24 @@ var cambio = function(){
 
 document.getElementById("jugar").onclick = cambio;
 
+//CAMBIO DE PANTALLA DE UNA SECCIÓN A OTRA DESDE UN SET TIME OUT
+
+tiempo();
+function imagen (){
+    if(imagen1 == true){
+        document.getElementById("imagen1").setAttribute("src", "img/2.jpg");
+        imagen1 = false;
+    } else{
+        document.getElementById("imagen1").setAttribute("src", "img/1.jpg");
+        imagen1 = true;
+    }
+    tiempo();
+}
+
+function tiempo(){ 
+    var temp = setTimeout( imagen, 3000)
+}
+
 //DECLARAMOS LA VARIABLE DE TECLADO
 var teclado = "";
 
