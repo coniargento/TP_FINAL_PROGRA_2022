@@ -5,7 +5,7 @@
 
 var cambio = function(){
     var nom = document.getElementById("pedido").value;
-    document.getElementById("nombre").innerHTML = "Bienvenido " + nom;
+    document.getElementById("nombre").innerHTML = "¿Estas listx para jugar " + nom + "?";
 }
 
 document.getElementById("jugar").onclick = cambio;
