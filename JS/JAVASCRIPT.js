@@ -28,13 +28,14 @@ function cambiodepantallas2(){
     document.querySelector("#pantalla1").style.display = "none";
 }
 
-/*
-//VARIABLE PARA QUE AL EMPEZAR A JUGAR TE APAREZCA TU NOMBRE
+
+/*TODO:
+//VARIABLE PARA QUE TE APAREZCA RU NOMBRE EN EL JUEGO
 var cambio = function(){
 
     var nom = document.getElementById("pedido").value;
 
-    document.getElementById("jugar").innerHTML = "¿Estas listx para jugar " + nom + "?";
+    document.getElementById("empezar").innerHTML = "¡Empecemos" + nom;
 }*/
 
 //DECLARAMOS LA VARIABLE DE TECLADO
