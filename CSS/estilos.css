@@ -1,5 +1,11 @@
 body{
     font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../IMG/fondo.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
 }
 
 section{
@@ -27,18 +33,26 @@ section{
     text-align: center;
     height: 140px;
     width: auto;
-    background-image: url("../IMG/fondo.jpg");
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-position: center center;
 }
 
 /* ID --> BOTON JUGAR */
 #jugar{
-    border-radius: 5px;
+    border-radius: 8px;
     border-color: #FFFFFF;
-    height: 50px;
+    height: 40px;
     width: 140px;
+    background-color: #277733;
+    font-size: large;
+    color: #FFFFFF;
+    margin: 20px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+#palabra{
+    border-radius: 8px;
+    border-color: #FFFFFF;
+    height: 40px;
+    width: 200px;
     background-color: #277733;
     font-size: large;
     color: #FFFFFF;
@@ -46,13 +60,14 @@ section{
 }
 
 #pedido{
-    border-radius: 5px;
+    border-radius: 8px;
     height: 30px;
     width: auto;
     background-color: #ffffff;
     font-size: medium;
     color: #000;
     margin: 20px;
+    box-shadow: inset 3px 4px 4px 1px rgba(0,0,0,0.5);
 }
 
 h1, h2, h3 {
