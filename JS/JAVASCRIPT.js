@@ -3,21 +3,24 @@
     document.write(event);
 }*/
 
-//VARIABLE PARA QUE AL APRETAR EL BOTON A JUGAR TE APAREZCA TU NOMBRE
+//FUNCIONES CAMBIO DE PANTALLA
+function cambiodepantallas1(){
+    document.querySelector("#pantalla1").style.display = "none";
+    document.querySelector("#pantalla2").style.display = "block";
+}
+function cambiodepantallas2(){
+    document.querySelector("#pantalla2").style.display = "block";
+    document.querySelector("#pantalla1").style.display = "none";
+}
+
+/*
+//VARIABLE PARA QUE AL EMPEZAR A JUGAR TE APAREZCA TU NOMBRE
 var cambio = function(){
 
     var nom = document.getElementById("pedido").value;
 
-    document.getElementById("nombre").innerHTML = "¿Estas listx para jugar " + nom + "?";
-}
-
-document.getElementById("jugar").onclick = cambio;
-
-//FUNCIONES CAMBIO DE PANTALLA
-function cambiodepantallas(){
-    document.querySelector("#pantalla1").style.display = "none";
-    document.querySelector("#pantalla2").style.display = "block";
-}
+    document.getElementById("jugar").innerHTML = "¿Estas listx para jugar " + nom + "?";
+}*/
 
 //DECLARAMOS LA VARIABLE DE TECLADO
 var teclado = "";
