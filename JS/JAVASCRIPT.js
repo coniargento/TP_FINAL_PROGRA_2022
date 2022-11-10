@@ -3,6 +3,7 @@
     document.write(event);
 }*/
 
+//VARIABLE PARA QUE AL APRETAR EL BOTON A JUGAR TE APAREZCA TU NOMBRE
 var cambio = function(){
 
     var nom = document.getElementById("pedido").value;
@@ -21,9 +22,7 @@ var letras = ["A","B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N
 //FOR PARA QUE RECORRA ESE ARRAY Y OBTENGAMOS UN BOTON CON CADA LETRA
 for(i=0; i<letras.length; i++){
 
-    teclado += "<button class= 'boton' onclick= 'mostrarletra(\""+letras[i]+"\")'"
-
-        letras[i]+"</button>";
+    teclado += "<button class= 'boton' onclick= 'mostrarletra(\""+letras[i]+"\")'>" + letras[i]+"</button>";
 }
 
 document.getElementById("botones").innerHTML = teclado;
