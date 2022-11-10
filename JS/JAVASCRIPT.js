@@ -13,6 +13,11 @@ var cambio = function(){
 
 document.getElementById("jugar").onclick = cambio;
 
+//FUNCIONES CAMBIO DE PANTALLA
+function cambiodepantallas(){
+    document.querySelector("#pantalla1").style.display = "none";
+    document.querySelector("#pantalla2").style.display = "block";
+}
 
 //DECLARAMOS LA VARIABLE DE TECLADO
 var teclado = "";
