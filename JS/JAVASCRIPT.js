@@ -60,4 +60,8 @@ document.getElementById("botones").innerHTML = teclado;
 //ARRAY QUE CONTIENE LAS 20 PALABRAS QUE TE PUEDEN TOCAR EN EL JUEGO
 var palabras = ["Heurística", "Prototipo", "Research", "Patrones", "Funcionalidad", "Interfaz", "Benchmark", "Encuestas", "Arquetipos", "Interacción", "Contenido", "Usuario", "Experiencia", "Colores", "Hipótesis", "Tipografía", "Grilla", "Metodología", "Testeos", "Ética"];
 
+// PROBBANDO FUNCIONAMIENTO AHORCADO //
 
+var btn_obtenerpalabra = document.getElementById('palabra');
+
+btn_obtenerpalabra.addEventListener
