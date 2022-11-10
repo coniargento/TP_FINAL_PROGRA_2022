@@ -13,6 +13,10 @@
         y pierde si se completa el dibujo del ahorcado.
 
     </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     
 </head>
 
@@ -28,20 +32,23 @@
 
     <!-- ETIQUETA 2 PARA DECIR LA TEMATICA DEL JUEGO-->
     <h2> Sobre UX</h2>
-    
-    <!-- FORMULARIO PARA QUE ESCRIBAN SU NOMBRE-->
+
     <h3 id="nombre">
-        <label for="Nombre">¿Cómo te llamas?
-            <input id="pedido" type="text" placeholder="Ingresa tu nombre" required>
-        </label>
+        <label for="Nombre">¿Cómo te llamas?</label>
     </h3>
 
-    <!--BOTÓN PARA EMPEZAR A JUGAR -->
-    <h3>
+    <!-- FORMULARIO PARA QUE ESCRIBAN SU NOMBRE-->
+    <!-- HACEMOS  EL FORMULARIO -->
+    <form id="formulario1">
+        <input id="pedido" type="text" placeholder="Ingresa tu nombre" required>
+        <!--BOTÓN PARA EMPEZAR A JUGAR -->
         <label for="jugar">
-            <button id="jugar" type="button" onclick="cambiodepantallas1()">¡A JUGAR!</button>
+            <button id="jugar" type="submit">¡A JUGAR!</button>
         </label>
-    </h3>
+    </form>
+
+    <!--BOTÓN PARA EMPEZAR A JUGAR -->
+  
 
 </section>
 
@@ -49,7 +56,7 @@
 
 <section id="pantalla2">
 
-    <h1> A jugar </h1>
+    <h1> ¡Empecemos! </h1>
 
 <!-- ESPACIOS PARA LAS PALABRAS-->
     <p id="adivinar_palabra">
