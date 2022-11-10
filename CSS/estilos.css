@@ -1,15 +1,32 @@
+section{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    text-align: center;
+}
+
 #pantalla1{
     padding: 250px;
     text-align: center;
     display: block;
+    height: 140px;
+    width: auto;
+    background-image: url("../IMG/fondo.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
 
 }
 
-#pantalla2{
+#pantalla2, #ganaste, #perdiste {
     padding: 250px;
     text-align: center;
-    display: block;
-
+    height: 140px;
+    width: auto;
+    background-image: url("../IMG/fondo.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
 }
 
 h1, h2, h3 {
@@ -23,8 +40,7 @@ h1, h2, h3 {
     padding: 1em;
     margin: 1em;
 }
-
-body {
+/*body {
     height: 600px;
     width: auto;
     background-image: url("../IMG/fondo.jpg");
@@ -34,7 +50,7 @@ body {
     
 }
 
-/* .boton
+.boton
 TODO*/
 
 
