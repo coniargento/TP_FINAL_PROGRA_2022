@@ -15,7 +15,7 @@
 h1, h2, h3 {
     color: white;
 }
-
+/* ID --> BOTON JUGAR */
 .jugar{
     border-radius: 5px;
     display: block;
@@ -33,5 +33,8 @@ body {
     background-position: center center;
     
 }
+
+
+
 
 
