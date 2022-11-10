@@ -3,6 +3,21 @@
     document.write(event);
 }*/
 
+//PARA QUE EL REQUIRED FUNCIONE TENGO QUE AGREGAR EL FORMULARIO UN SUBMIT
+document.getElementById("formulario1").onsubmit = function(){
+
+    //console.log("%holaaaaaa")
+    //OBTENGO LA INFO CARGADA
+    var usuario = document.getElementById("pedido").value;
+    console.log(usuario);
+
+    cambiodepantallas2();
+
+    //OBLIGATORIO PARA QUE NO SE RECARGUE LA PANTALLA
+    return false;
+}
+
+
 //FUNCIONES CAMBIO DE PANTALLA
 function cambiodepantallas1(){
     document.querySelector("#pantalla1").style.display = "none";
