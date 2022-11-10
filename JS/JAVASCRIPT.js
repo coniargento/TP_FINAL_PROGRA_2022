@@ -6,8 +6,12 @@
 var cambio = function(){
 
     var nom = document.getElementById("pedido").value;
+<<<<<<< HEAD
 
         document.getElementById("nombre").innerHTML = "Bienvenido " + nom;
+=======
+    document.getElementById("nombre").innerHTML = "¿Estas listx para jugar " + nom + "?";
+>>>>>>> 602b3b497fba2be72ef81360db27af475366072f
 }
 
 document.getElementById("jugar").onclick = cambio;
