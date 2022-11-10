@@ -29,17 +29,33 @@ section{
     background-position: center center;
 }
 
+/* ID --> BOTON JUGAR */
+#jugar{
+    border-radius: 5px;
+    height: 50px;
+    width: 140px;
+    background-color: #277733;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    color: #FFFFFF;
+    margin: 20px;
+}
+
+#pedido{
+    border-radius: 5px;
+    height: 30px;
+    width: auto;
+    background-color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: #000;
+    margin: 20px;
+}
+
 h1, h2, h3 {
     color: white;
 }
-/* ID --> BOTON JUGAR */
-.jugar{
-    border-radius: 5px;
-    display: block;
-    text-align: center;
-    padding: 1em;
-    margin: 1em;
-}
+
 /*body {
     height: 600px;
     width: auto;
