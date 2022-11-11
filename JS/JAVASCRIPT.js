@@ -81,11 +81,17 @@ console.log(btn_obtenerpalabra);
 
 function cambiar(cambio){
 
+// propiedad para que el boton se toque una vez sola
+//false activo  true inactivo
+btn_obtenerpalabra.disabled = true;
+
+
     var parrafo =  id ('adivinar_palabra');
 
-    var cant_palabras = palabras.length;
+//genero espacios vacios 
+    parrafo.innerHTML = ' '
 
-    console.log(cant_palabras);
+    var cant_palabras = palabras.length;
 
 // VARIABLE RANDOM --> C/NRO DEL 0 AL 20 (20 PALABRAS)
 
@@ -104,10 +110,11 @@ function cambiar(cambio){
 // FOR PARA CREAR SPAN EN EL PARRAFO  // CREE UNA FUNCION ARRIBA
         for ( i = 0 ; i< cant_letas; i++){
 
-            var span = document.createElement('span');
+            var span = document.createElement( 'span' );
 
 // AÑADIMOS SPAN AL PARRAFO
             parrafo.appendChild(span);
 
         }
+    console.info(span);
 }
