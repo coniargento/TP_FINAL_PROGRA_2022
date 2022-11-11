@@ -60,8 +60,54 @@ document.getElementById("botones").innerHTML = teclado;
 //ARRAY QUE CONTIENE LAS 20 PALABRAS QUE TE PUEDEN TOCAR EN EL JUEGO
 var palabras = ["Heurística", "Prototipo", "Research", "Patrones", "Funcionalidad", "Interfaz", "Benchmark", "Encuestas", "Arquetipos", "Interacción", "Contenido", "Usuario", "Experiencia", "Colores", "Hipótesis", "Tipografía", "Grilla", "Metodología", "Testeos", "Ética"];
 
-// PROBBANDO FUNCIONAMIENTO AHORCADO //
+// FUNCION SPAN <P> HTML //return retorna busca el elemento y lo devuelve
 
-var btn_obtenerpalabra = document.getElementById('palabra');
+        function id ( str ) {
+            return document.getElementById ( str );
+        }
 
-btn_obtenerpalabra.addEventListener
+// REUTILIZO LA FUNCION DE ARRIBA ACA TAMB (ID)
+    
+//var btn_obtenerpalabra = document.getElementById('palabra');
+var btn_obtenerpalabra = id ('palabra');
+
+// FUNCION ASOCIADA A EVENTOS--> ONCLIC ONMOUSEOVER,ETC = ESCUCHADORES DE EVENTOS
+
+btn_obtenerpalabra.addEventListener('click', cambiar );
+
+console.log(btn_obtenerpalabra);
+
+// FUNCION RANDOM PALABRAS 
+
+function cambiar(cambio){
+
+    var parrafo =  id ('adivinar_palabra');
+
+    var cant_palabras = palabras.length;
+
+    console.log(cant_palabras);
+
+// VARIABLE RANDOM --> C/NRO DEL 0 AL 20 (20 PALABRAS)
+
+    var random = Math.floor(Math.random()*(20-0))+0;
+
+// PALABRAS RANDOM DEL ARRAY 
+
+    var palabras_2 = palabras [random];
+
+//VARIABLE DICE CANT LETRAS DDE PALABRA
+
+    var cant_letas = palabras_2.length;
+
+    console.error(palabras_2);
+
+// FOR PARA CREAR SPAN EN EL PARRAFO  // CREE UNA FUNCION ARRIBA
+        for ( i = 0 ; i< cant_letas; i++){
+
+            var span = document.createElement('span');
+
+// AÑADIMOS SPAN AL PARRAFO
+            parrafo.appendChild(span);
+
+        }
+}
