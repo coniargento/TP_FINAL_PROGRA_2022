@@ -169,9 +169,19 @@ function click_letras (cambio) {
 
             acerto = true;
         }
-            else {
-                cant_errores++;
-            }
+    }
+
+    if ( acerto == false ) {
+
+        cant_errores++;
+
+        var agregar_img = `../TP_FINAL_PROGRA_2022/IMAGENES/img${cant_errores}.png`;
+
+        var imagen = id('ahorcado');
+
+        imagen.src = agregar_img;
+      
+        //  "../"../TP_FINAL_PROGRA_2022/IMAGENES/cabeza.png"
     }
 
     console.log ( " la letra " + letra_teclado + " en la palabra "  + palabras_2 + "¿existe?: " + acerto);
