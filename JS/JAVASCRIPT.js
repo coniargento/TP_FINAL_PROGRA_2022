@@ -19,6 +19,7 @@ document.getElementById("formulario1").onsubmit = function(){
 
 // VARIABLE GLOBAL DE PALABRAS RANDOM (PALABRAS_2)
 
+    var palabras_2;
 
 //FUNCIONES CAMBIO DE PANTALLA
 function cambiodepantallas1(){
@@ -56,7 +57,6 @@ document.getElementById("botones").innerHTML = teclado;
 
     function mostrarletra(letras){
 
-        alert(letras);
     }
 
 //ARRAY QUE CONTIENE LAS 20 PALABRAS QUE TE PUEDEN TOCAR EN EL JUEGO
@@ -101,7 +101,7 @@ btn_obtenerpalabra.disabled = true;
 
 // PALABRAS RANDOM DEL ARRAY 
 
-    var palabras_2 = palabras [random];
+     palabras_2 = palabras [random];
 
 //VARIABLE DICE CANT LETRAS DDE PALABRA
 
@@ -119,4 +119,20 @@ btn_obtenerpalabra.disabled = true;
 
         }
     console.info(span);
+}
+
+// var botones letras teclado c/for
+
+var btn_botones = document.querySelectorAll ("#botones button");
+
+    for (i = 0; i< btn_botones.length; i++ ){
+
+        btn_botones [ i ].addEventListener ('click', click_letras);
+
+    }
+// FUNCION CLICK LETRAS 
+
+function click_letras () {
+
+    console.log ( palabras_2);
 }
