@@ -37,11 +37,14 @@ section{
 }
 
   
-    .ahorcado{
-
-        text-align: left;
-        height: 50px;
+    #ahorcado{
+        background-position: left center;
+        height: 350px;
         width: auto;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        
     }
 
 
