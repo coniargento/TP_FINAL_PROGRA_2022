@@ -118,6 +118,9 @@ btn_obtenerpalabra.disabled = true;
             parrafo.appendChild(span);
 
         }
+    
+    // no puedo hacer q se vean los span 
+    //        span.innerHTML = span;
     console.info(span);
 }
 
@@ -153,7 +156,7 @@ function click_letras (cambio) {
             // variable i = posicion de la letra en la palabra
             // se supone q coincide con el span creado
            
-            spans[i].innerHTML = letra_teclado;
+            spans[i].innerHTML = letra_teclado
            
             acerto = true;
         }
