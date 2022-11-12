@@ -60,7 +60,7 @@ document.getElementById("botones").innerHTML = teclado;
     }
 
 //ARRAY QUE CONTIENE LAS 20 PALABRAS QUE TE PUEDEN TOCAR EN EL JUEGO
-var palabras = ["Heurística", "Prototipo", "Research", "Patrones", "Funcionalidad", "Interfaz", "Benchmark", "Encuestas", "Arquetipos", "Interacción", "Contenido", "Usuario", "Experiencia", "Colores", "Hipótesis", "Tipografía", "Grilla", "Metodología", "Testeos", "Ética"];
+var palabras = ["HEURISTICAS", "PROTOTIPO", "RESEARCH", "PATRONES", "FUNCIONALIDAD", "INTERFAZ", "BENCHMARK", "ENCUESTAS", "ARQUETIPOS", "INTERACCION", "CONTENIDO", "USUARIO", "EXPERIENCIA", "COLORES", "HIPOTESIS", "TIPOGRAFIA", "GRILLA", "METODOLOGIA", "TESTEOS", "ETICA"];
 
 // FUNCION SPAN <P> HTML //return retorna busca el elemento y lo devuelve
 
@@ -139,6 +139,20 @@ function click_letras (cambio) {
 
     button.disabled = true;
 
+    var letra_teclado = button.innerHTML;
 
-    console.log ( palabras_2);
+    //variables acerto letra
+
+    var acerto = false;
+
+// recorro con un for la cadena de texto y con un if me fijo si la letra existe en essa palabra 
+    for (i =0; i< palabras_2.length; i++){
+
+        if (letra_teclado == palabras_2[i] ){
+            
+            acerto = true;
+        }
+    }
+
+    console.log ( " la letra " + letra_teclado + " en la palabra "  + palabras_2 + "¿existe?: " + acerto);
 }
