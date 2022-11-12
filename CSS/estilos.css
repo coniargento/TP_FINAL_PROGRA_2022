@@ -33,7 +33,17 @@ section{
     text-align: center;
     height: 140px;
     width: auto;
+    
 }
+
+  
+    .ahorcado{
+
+        text-align: left;
+        height: 50px;
+        width: auto;
+    }
+
 
 /* ID --> BOTON JUGAR */
 #jugar{

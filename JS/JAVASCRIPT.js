@@ -21,6 +21,11 @@ document.getElementById("formulario1").onsubmit = function(){
 
     var palabras_2;
 
+    var cant_errores = 0; // cuantas veces me equivoque
+
+    var cant_aciertos = 0; // cuantas veces acerte
+
+
 //FUNCIONES CAMBIO DE PANTALLA
 function cambiodepantallas1(){
     document.querySelector("#pantalla1").style.display = "none";
@@ -87,6 +92,8 @@ function cambiar(cambio){
 //false activo  true inactivo
 btn_obtenerpalabra.disabled = true;
 
+        cant_errores = 0; 
+        cant_aciertos = 0; 
 
     var parrafo =  id ('adivinar_palabra');
 
@@ -158,8 +165,13 @@ function click_letras (cambio) {
            
             spans[i].innerHTML = letra_teclado
            
+        cant_aciertos++;
+
             acerto = true;
         }
+            else {
+                cant_errores++;
+            }
     }
 
     console.log ( " la letra " + letra_teclado + " en la palabra "  + palabras_2 + "¿existe?: " + acerto);
