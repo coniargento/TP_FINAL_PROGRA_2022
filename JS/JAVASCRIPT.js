@@ -17,6 +17,8 @@ document.getElementById("formulario1").onsubmit = function(){
     return false;
 }
 
+// VARIABLE GLOBAL DE PALABRAS RANDOM (PALABRAS_2)
+
 
 //FUNCIONES CAMBIO DE PANTALLA
 function cambiodepantallas1(){
