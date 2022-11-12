@@ -224,3 +224,5 @@ function click_letras (cambio) {
                 btn_obtenerpalabra.disabled = false;
 
             }
+
+        game_over();
