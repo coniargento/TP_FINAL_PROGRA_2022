@@ -134,6 +134,7 @@ var btn_botones = document.querySelectorAll ("#botones button");
 
 function click_letras (cambio) {
 
+    var spans =  document.querySelectorAll ('#adivinar_palabra span')
 // target = dice q elemento de html toque
     var button =  cambio.target;  
 
@@ -149,7 +150,11 @@ function click_letras (cambio) {
     for (i =0; i< palabras_2.length; i++){
 
         if (letra_teclado == palabras_2[i] ){
-            
+            // variable i = posicion de la letra en la palabra
+            // se supone q coincide con el span creado
+           
+            spans[i].innerHTML = letra_teclado;
+           
             acerto = true;
         }
     }
