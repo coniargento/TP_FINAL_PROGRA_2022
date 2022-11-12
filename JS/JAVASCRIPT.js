@@ -52,6 +52,7 @@ var teclado = "";
 //ARRAY LETRAS PARA HACER EL TECLADO
 var letras = ["A","B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
+//CLICK ADIVINAR LETRA
 //FOR PARA QUE RECORRA ESE ARRAY Y OBTENGAMOS UN BOTON CON CADA LETRA
 for(i=0; i<letras.length; i++){
 
@@ -78,8 +79,10 @@ var palabras = ["HEURISTICAS", "PROTOTIPO", "RESEARCH", "PATRONES", "FUNCIONALID
 //var btn_obtenerpalabra = document.getElementById('palabra');
 var btn_obtenerpalabra = id ('palabra');
 
-// FUNCION ASOCIADA A EVENTOS--> ONCLIC ONMOUSEOVER,ETC = ESCUCHADORES DE EVENTOS
+var imagen = id('ahorcado');
 
+// FUNCION ASOCIADA A EVENTOS--> ONCLIC ONMOUSEOVER,ETC = ESCUCHADORES DE EVENTOS
+//CLICK EN INICIAR JUEGO!
 btn_obtenerpalabra.addEventListener('click', cambiar );
 
 console.log(btn_obtenerpalabra);
@@ -88,6 +91,7 @@ console.log(btn_obtenerpalabra);
 
 function cambiar(cambio){
 
+    imagen.src = '../TP_FINAL_PROGRA_2022/IMAGENES/ahorcado.png'
 // propiedad para que el boton se toque una vez sola
 //false activo  true inactivo
 btn_obtenerpalabra.disabled = true;
@@ -115,6 +119,12 @@ btn_obtenerpalabra.disabled = true;
     var cant_letas = palabras_2.length;
 
     console.error(palabras_2);
+
+            for (i = 0; i< btn_botones.length; i++ ){
+
+                btn_botones [ i ].disabled = false;
+
+            }
 
 // FOR PARA CREAR SPAN EN EL PARRAFO  // CREE UNA FUNCION ARRIBA
         for ( i = 0 ; i< cant_letas; i++){
@@ -156,33 +166,61 @@ function click_letras (cambio) {
 
     var acerto = false;
 
-// recorro con un for la cadena de texto y con un if me fijo si la letra existe en essa palabra 
-    for (i =0; i< palabras_2.length; i++){
+    // recorro con un for la cadena de texto y con un if me fijo si la letra existe en essa palabra 
+        for (i =0; i< palabras_2.length; i++){
 
-        if (letra_teclado == palabras_2[i] ){
-            // variable i = posicion de la letra en la palabra
-            // se supone q coincide con el span creado
-           
-            spans[i].innerHTML = letra_teclado
-           
-        cant_aciertos++;
+            if (letra_teclado == palabras_2[i] ){
+                // variable i = posicion de la letra en la palabra
+                // se supone q coincide con el span creado
+            
+                spans[i].innerHTML = letra_teclado
+            
+            cant_aciertos++;
 
-            acerto = true;
+                acerto = true;
+            }
         }
-    }
 
-    if ( acerto == false ) {
+            if ( acerto == false ) {
 
-        cant_errores++;
+                cant_errores++;
 
-        var agregar_img = `../TP_FINAL_PROGRA_2022/IMAGENES/img${cant_errores}.png`;
+                var agregar_img = `../TP_FINAL_PROGRA_2022/IMAGENES/img${cant_errores}.png`;
 
-        var imagen = id('ahorcado');
+                var imagen = id('ahorcado');
 
-        imagen.src = agregar_img;
-      
-        //  "../"../TP_FINAL_PROGRA_2022/IMAGENES/cabeza.png"
-    }
+                imagen.src = agregar_img;
+            
+                //  "../"../TP_FINAL_PROGRA_2022/IMAGENES/cabeza.png"
+            }
 
-    console.log ( " la letra " + letra_teclado + " en la palabra "  + palabras_2 + "¿existe?: " + acerto);
-}
+            // limite de errores = CAMBIO DE PANTALLA PERDISTE
+
+                if ( cant_errores == 8 ) {
+
+                    id ('perdiste').innerHTML = "PERDISTE, LA PALABRA ERA: " + palabras_2;
+                    
+                    game_over ();
+                }
+                    else if (cant_aciertos == palabras_2.length ){
+
+                        id ('ganaste').innerHTML = "GANASTE EL AHORCADOOO!!";
+
+                    }
+
+
+            console.log ( " la letra " + letra_teclado + " en la palabra "  + palabras_2 + "¿existe?: " + acerto);
+        }
+
+// FIN DEL JUEGO
+            function game_over (){
+                
+                for (i = 0; i< btn_botones.length; i++ ){
+
+                    btn_botones [ i ].disabled = true;
+
+                }
+
+                btn_obtenerpalabra.disabled = false;
+
+            }
