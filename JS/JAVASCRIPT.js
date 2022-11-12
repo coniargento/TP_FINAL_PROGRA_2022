@@ -132,7 +132,13 @@ var btn_botones = document.querySelectorAll ("#botones button");
     }
 // FUNCION CLICK LETRAS 
 
-function click_letras () {
+function click_letras (cambio) {
+
+// target = dice q elemento de html toque
+    var button =  cambio.target;  
+
+    button.disabled = true;
+
 
     console.log ( palabras_2);
 }
