@@ -109,11 +109,11 @@ h1, h2, h3 {
     border-color: #FFFFFF;
 }
 
-
-.espacios_span {
-
-    border: 2px;
-    border-color: white;
+/* BORDE SPAN NO FUNCIONA */
+span {
+    font-size: 60px;
+    font-weight: bold;
+    color: #FFFFFF;
 
 }
 
