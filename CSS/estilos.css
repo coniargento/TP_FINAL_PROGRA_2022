@@ -22,7 +22,7 @@ section{
 }
 
 #pantalla1{
-    padding: 250px;
+    padding: 150px;
     text-align: center;
     display: block;
     height: 140px;
@@ -38,6 +38,7 @@ section{
 h1{
     font-size: 30pt;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 /*TAMAÑO DE LETRA DEL SUBTITULO*/
