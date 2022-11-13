@@ -110,6 +110,13 @@ h1, h2, h3 {
 }
 
 
+.espacios_span {
+
+    border: 2px;
+    border-color: white;
+
+}
+
 /*body {
     height: 600px;
     width: auto;

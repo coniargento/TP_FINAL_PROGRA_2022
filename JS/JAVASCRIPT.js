@@ -134,10 +134,13 @@ btn_obtenerpalabra.disabled = true;
 // AÑADIMOS SPAN AL PARRAFO
             parrafo.appendChild(span);
 
+            span.innerHTML = " __ ";
         }
+//CLASSLIST PONE CLASES AL SPAN
+        span.classList.add("espacios_span");
     
     // no puedo hacer q se vean los span 
-    //        span.innerHTML = span;
+           
     console.info(span);
 }
 
