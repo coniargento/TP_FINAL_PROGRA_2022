@@ -57,7 +57,7 @@ h3{
 }
 
 #pantalla2, #ganaste, #perdiste {
-    padding: 250px;
+    padding: 150px;
     text-align: center;
     height: 140px;
     width: auto;
@@ -113,10 +113,11 @@ h3{
 }
 
 #pedido{
-    border-radius: 8px;
-    height: 30px;
+    border-radius: 10px;
+    height: 40px;
     width: auto;
     background-color: #ffffff;
+    font-family: montserrat;
     font-size: medium;
     color: #000;
     margin: 20px;
