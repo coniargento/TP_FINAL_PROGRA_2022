@@ -34,18 +34,27 @@ section{
 
 }
 
-/*TAMAÑO DE LETRA DEL TITULO*/
+/*TITULO*/
 h1{
     font-size: 30pt;
     text-align: center;
     margin-bottom: 50px;
 }
 
-/*TAMAÑO DE LETRA DEL SUBTITULO*/
-h1{
-    font-size: 20pt;
+/*SUBTITULO*/
+h2{
+    font-size: 26pt;
     text-align: center;
+    margin-bottom: 50px;
 }
+
+/*COMO TE LLAMAS*/
+h3{
+    font-size: 12pt;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 #pantalla2, #ganaste, #perdiste {
     padding: 250px;
     text-align: center;
