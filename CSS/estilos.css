@@ -34,6 +34,17 @@ section{
 
 }
 
+/*TAMAÑO DE LETRA DEL TITULO*/
+h1{
+    font-size: 30pt;
+    text-align: center;
+}
+
+/*TAMAÑO DE LETRA DEL SUBTITULO*/
+h1{
+    font-size: 20pt;
+    text-align: center;
+}
 #pantalla2, #ganaste, #perdiste {
     padding: 250px;
     text-align: center;
