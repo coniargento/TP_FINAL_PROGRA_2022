@@ -229,3 +229,5 @@ function click_letras (cambio) {
             }
 
         game_over();
+
+// CONCATENAR NOMBRE DE USUARIO Y LOS PUNTOS //
