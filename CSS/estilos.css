@@ -105,14 +105,16 @@ h3{
 }
 
 #palabra{
-    border-radius: 8px;
+    border-radius: 10px;
     border-color: #FFFFFF;
     height: 40px;
     width: 200px;
     background-color: #277733;
+    font-family: montserrat;
     font-size: large;
     color: #FFFFFF;
     margin: 20px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 
 #pedido{
