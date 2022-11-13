@@ -36,6 +36,13 @@ section{
     
 }
 
+#fotos{
+
+    position: absolute;
+    top: 2%;
+    left: 2%;
+
+}
     
   
     #ahorcado{
@@ -43,7 +50,7 @@ section{
         flex-wrap: nowrap;
         justify-content: flex-start;
         background-position: left center;
-        height: 350px;
+        height: 480px;
         width: auto;
         display: flex;
         align-items: left;
