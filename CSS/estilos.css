@@ -1,5 +1,11 @@
+/*ESTO ES PARA AGREGAR LA FUENTE TIZA EN EL HTML*/
+@font-face {
+    font-family: tiza;
+    src: url(tiza.ttf);
+    }
+
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: tiza;
     margin: 0px;
     padding: 0px;
     background-image: url("../IMG/fondo.jpg");
