@@ -188,7 +188,7 @@ function click_letras (cambio) {
 
                 cant_errores++;
 
-                var agregar_img = `../TP_FINAL_PROGRA_2022/IMAGENES/img${cant_errores}.png`;
+                var agregar_img = "../TP_FINAL_PROGRA_2022/IMAGENES/ahorcado.png" + `../TP_FINAL_PROGRA_2022/IMAGENES/img${cant_errores}.png`;
 
                 var imagen = id('ahorcado');
 
