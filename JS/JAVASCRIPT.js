@@ -185,7 +185,7 @@ function click_letras (cambio) {
             //SUMARLE 5 PUNTOS SI ACIERTA UNA LETRA
             puntos = puntos + 5;
 
-            document.getElementById("puntos").innerHTML = puntos; // INSERTAMOS LOS PUNTOS EN EL HTML
+            document.getElementById("puntos_2").innerHTML = puntos; // INSERTAMOS LOS PUNTOS EN EL HTML
 
             console.error(puntos);
                 acerto = true;
@@ -209,8 +209,8 @@ function click_letras (cambio) {
 
                 if ( cant_errores == 8 ) {
 
-                    id ('perdiste').innerHTML = "PERDISTE, LA PALABRA ERA: " + palabras_2;
-                    
+                    document.getElementById("perdiste").innerHTML = "PERDISTE, LA PALABRA ERA: " + palabras_2;
+
                     game_over ();
                 }
                     
@@ -232,4 +232,4 @@ function click_letras (cambio) {
 
         game_over( );
 
-// CONCATENAR NOMBRE DE USUARIO Y LOS PUNTOS //
+//TODO CONCATENAR NOMBRE DE USUARIO Y LOS PUNTOS //
