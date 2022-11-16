@@ -93,7 +93,7 @@ console.log(btn_obtenerpalabra);
 
 function cambiar(cambio){
 
-    imagen.src = '../TP_FINAL_PROGRA_2022/IMAGENES/img0.png'
+    imagen.src = '../TP_FINAL_PROGRA_2022/IMAGENES/img0.png';
 // propiedad para que el boton se toque una vez sola
 //false activo  true inactivo
 btn_obtenerpalabra.disabled = true;
@@ -104,7 +104,7 @@ btn_obtenerpalabra.disabled = true;
     var parrafo =  id ('adivinar_palabra');
 
 //genero espacios vacios 
-    parrafo.innerHTML = ' '
+    parrafo.innerHTML = ' ';
 
     var cant_palabras = palabras.length;
 
@@ -152,7 +152,7 @@ var btn_botones = document.querySelectorAll ("#botones button");
 
     for (i = 0; i< btn_botones.length; i++ ){
 
-        btn_botones [ i ].addEventListener ('click', click_letras);
+        btn_botones[ i ].addEventListener ('click', click_letras);
 
     }
 // FUNCION CLICK LETRAS 
@@ -195,7 +195,7 @@ function click_letras (cambio) {
             }
         }
 
-            if ( acerto == false ) {
+            if ( acerto == false ){
 
                 cant_errores++;
 
