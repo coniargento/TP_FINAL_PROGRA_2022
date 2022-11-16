@@ -220,6 +220,7 @@ function click_letras (cambio) {
 
                         id ('ganaste').innerHTML = "GANASTE EL AHORCADOOO!!";
 
+                        game_over ();
                     }
 
 
