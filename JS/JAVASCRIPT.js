@@ -159,7 +159,7 @@ var btn_botones = document.querySelectorAll ("#botones button");
 
 function click_letras (cambio) {
 
-    var spans =  document.querySelectorAll ('#adivinar_palabra span')
+    var spans =  document.querySelectorAll ('#adivinar_palabra span');
 // target = dice q elemento de html toque
     var button =  cambio.target;  
 
@@ -245,6 +245,6 @@ function puntos_ahorcado(){
 
             }
 
-        game_over();
+        game_over( );
 
 // CONCATENAR NOMBRE DE USUARIO Y LOS PUNTOS //
