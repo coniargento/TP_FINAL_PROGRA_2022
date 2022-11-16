@@ -185,10 +185,9 @@ function click_letras (cambio) {
             //SUMARLE 5 PUNTOS SI ACIERTA UNA LETRA
             puntos = puntos + 5;
 
-            puntos = id('puntos'); // SUMO 5PUNTOS X CADA LETRRA ACERTADA
+            document.getElementById("puntos").innerHTML = puntos; // INSERTAMOS LOS PUNTOS EN EL HTML
 
             console.error(puntos);
-
                 acerto = true;
             }
         }
@@ -217,20 +216,6 @@ function click_letras (cambio) {
                     
             console.log ( " la letra " + letra_teclado + " en la palabra "  + palabras_2 + "¿existe?: " + acerto);
         }
-
-// VARIABLE PARA QUE LOS PUNTOS INICIALICEN EN 0:
-var puntos = 0;
-
-// FUNCION PARA LOS PUNTOS:
-
-function puntos_ahorcado(){
-    var texto_puntos = "Tus puntos: " + puntos;
-}
-
-
-
-
-
 
 // FIN DEL JUEGO
             function game_over (){
