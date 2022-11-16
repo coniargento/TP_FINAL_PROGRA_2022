@@ -182,11 +182,12 @@ function click_letras (cambio) {
             
             cant_aciertos++;
 
-            
+            /*
             puntos_usuario = puntos_usuario + 5;
 
             puntos_usuario = id('puntos'); // SUMO 5PUNTOS X CADA LETRRA ACERTADA
 
+            */
 
             console.error(puntos_usuario);
 
