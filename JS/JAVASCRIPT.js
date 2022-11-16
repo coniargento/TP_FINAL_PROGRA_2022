@@ -25,7 +25,7 @@ document.getElementById("formulario1").onsubmit = function(){
 
     var cant_aciertos = 0; // cuantas veces acerte
 
-    var puntos_usuario = 0; // variable puntos usuario
+    var puntos = 0; // variable puntos usuario
 
 
 //FUNCIONES CAMBIO DE PANTALLA
@@ -182,14 +182,12 @@ function click_letras (cambio) {
             
             cant_aciertos++;
 
-            /*
-            puntos_usuario = puntos_usuario + 5;
+            //SUMARLE 5 PUNTOS SI ACIERTA UNA LETRA
+            puntos = puntos + 5;
 
-            puntos_usuario = id('puntos'); // SUMO 5PUNTOS X CADA LETRRA ACERTADA
+            puntos = id('puntos'); // SUMO 5PUNTOS X CADA LETRRA ACERTADA
 
-            */
-
-            console.error(puntos_usuario);
+            console.error(puntos);
 
                 acerto = true;
             }
@@ -216,16 +214,23 @@ function click_letras (cambio) {
                     
                     game_over ();
                 }
-                    else if (cant_aciertos == palabras_2.length ){
-
-                        id ('ganaste').innerHTML = "GANASTE EL AHORCADOOO!!";
-
-                        game_over ();
-                    }
-
-
+                    
             console.log ( " la letra " + letra_teclado + " en la palabra "  + palabras_2 + "¿existe?: " + acerto);
         }
+
+// VARIABLE PARA QUE LOS PUNTOS INICIALICEN EN 0:
+var puntos = 0;
+
+// FUNCION PARA LOS PUNTOS:
+
+function puntos_ahorcado(){
+    var texto_puntos = "Tus puntos: " + puntos;
+}
+
+
+
+
+
 
 // FIN DEL JUEGO
             function game_over (){
