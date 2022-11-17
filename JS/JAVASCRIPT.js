@@ -96,6 +96,8 @@ function cambiar(){
     imagen.src = '../TP_FINAL_PROGRA_2022/IMAGENES/img0.png';
 // propiedad para que el boton se toque una vez sola
 //false activo  true inactivo
+var button =  cambio.target;  
+
 btn_obtenerpalabra.disabled = true;
 
         cant_errores = 0; 
