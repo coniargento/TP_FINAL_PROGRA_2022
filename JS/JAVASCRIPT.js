@@ -213,14 +213,6 @@ function click_letras (cambio) {
 
                     game_over ();
 
-                    function cambiodepantallas2(){
-                        document.querySelector("#pantalla2").style.display = "none";
-                        document.querySelector("#pantalla3").style.display = "block";
-                    }
-                    function cambiodepantallas3(){
-                        document.querySelector("#pantalla3").style.display = "block";
-                        document.querySelector("#pantalla2").style.display = "none";
-                    }
                 }
                     
             console.log ( " la letra " + letra_teclado + " en la palabra "  + palabras_2 + "¿existe?: " + acerto);
