@@ -216,6 +216,17 @@ function click_letras (cambio) {
                     
             console.log ( " la letra " + letra_teclado + " en la palabra "  + palabras_2 + "¿existe?: " + acerto);
         }
+ 
+//PUNTOS
+    if(cant_aciertos === palabras_2.length){
+        // En este punto ya adivino la palabra.
+        alert("Bien ahi amigo, acabas de adivinar la palabra.");
+        cambiar("Esto es inutil");
+    }
+    
+    if(puntos >= 100){
+        alert("Ganaste el juego, baron.");
+    }
 
 // FIN DEL JUEGO
             function game_over (){
