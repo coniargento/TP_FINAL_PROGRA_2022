@@ -224,8 +224,8 @@ function click_letras (cambio) {
             }
             
             if(puntos >= 100){
-
-                alert("Ganaste el juego, baron.");
+                cambiodepantallas4();
+                return false;
             }
 
             document.getElementById("puntos_2").innerHTML = puntos; // INSERTAMOS LOS PUNTOS EN EL HTML
