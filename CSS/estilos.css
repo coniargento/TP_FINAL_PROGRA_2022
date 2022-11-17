@@ -60,7 +60,7 @@ h3{
 }
 
 #pantalla2, #ganaste, #perdiste {
-    padding: 150px;
+    padding: 0em 100px 260px 120px;
     text-align: center;
     height: 140px;
     width: auto;
@@ -86,6 +86,7 @@ h3{
     align-items: left;
     justify-content: left;
     position: absolute;
+    top: -5em;
 
 
 }
@@ -130,7 +131,7 @@ h3{
 }
 
 .boton {
-    margin: 0.5em;
+    margin: 0.7em;
     text-align: center;
     font-size: large;
     width: 60px;
