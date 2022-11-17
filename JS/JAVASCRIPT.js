@@ -222,8 +222,7 @@ function click_letras (cambio) {
                     //id ("perdiste").innerHTML = "GANASTE!!"
 
                     game_over ();
-
-                    cambiodepantallas6();                    
+            
                 }
                     
             console.log ( " la letra " + letra_teclado + " en la palabra "  + palabras_2 + "¿existe?: " + acerto);
@@ -262,7 +261,7 @@ function cambiodepantallasboton_ganaste(){
 }
 
 document.getElementById("volver-inicio").onclick = function(){
-    cambiodepantallasboton_ganaste();
+    cambiodepantallasboton_ganaste(); 
     //OBLIGATORIO PARA QUE NO SE RECARGUE LA PANTALLA
     return false;
 }
