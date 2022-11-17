@@ -244,10 +244,14 @@ function cambiodepantallas4(){
 }
 
 //FUNCIONES CAMBIO DE BOTON-VOLVER A JUGAR A  PANTALLA 2
-document.getElementById("jugar-denuevo").onclick = function(){
+function cambiodepantallasboton(){
+    document.querySelector("#pantalla1").style.display = "block";
+    document.querySelector("#pantalla4").style.display = "none";
+}
 
-    cambiodepantallas4();
+document.getElementById("volver-inicio").onclick = function(){
 
+    cambiodepantallasboton();
     //OBLIGATORIO PARA QUE NO SE RECARGUE LA PANTALLA
     return false;
 }
