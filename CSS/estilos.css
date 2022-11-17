@@ -168,6 +168,19 @@ span {
     text-align: right;
 }
 
+#jugar-denuevo{
+    border-radius: 10px;
+    border-color: #FFFFFF;
+    height: 40px;
+    width: 140px;
+    background-color: #277733;
+    font-family: montserrat;
+    font-size: large;
+    color: #FFFFFF;
+    margin: 20px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
 /*body {
     height: 600px;
     width: auto;

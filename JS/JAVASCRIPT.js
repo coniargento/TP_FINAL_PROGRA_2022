@@ -232,7 +232,7 @@ function click_letras (cambio) {
     }
 
 //FUNCIONES CAMBIO DE PANTALLA 2-EL JUEGO A 4-GANASTE
-function cambiodepantallas2(){
+function cambiodepantallas3(){
     document.querySelector("#pantalla2").style.display = "none";
     document.querySelector("#pantalla4").style.display = "block";
 }
