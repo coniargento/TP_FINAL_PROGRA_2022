@@ -185,9 +185,10 @@ function click_letras (cambio) {
             //SUMARLE 5 PUNTOS SI ACIERTA UNA LETRA
             puntos = puntos + 5;
 
-            document.getElementById("puntos_2").innerHTML = puntos; // INSERTAMOS LOS PUNTOS EN EL HTML
+            puntos = id('puntos'); // SUMO 5PUNTOS X CADA LETRRA ACERTADA
 
             console.error(puntos);
+
                 acerto = true;
             }
         }
@@ -209,14 +210,28 @@ function click_letras (cambio) {
 
                 if ( cant_errores == 8 ) {
 
-                    document.getElementById("perdiste").innerHTML = "PERDISTE, LA PALABRA ERA: " + palabras_2;
-
+                    id ('perdiste').innerHTML = "PERDISTE, LA PALABRA ERA: " + palabras_2;
+                    
                     game_over ();
 
                 }
                     
             console.log ( " la letra " + letra_teclado + " en la palabra "  + palabras_2 + "¿existe?: " + acerto);
         }
+
+// VARIABLE PARA QUE LOS PUNTOS INICIALICEN EN 0:
+var puntos = 0;
+
+// FUNCION PARA LOS PUNTOS:
+
+function puntos_ahorcado(){
+    var texto_puntos = "Tus puntos: " + puntos;
+}
+
+
+
+
+
 
 // FIN DEL JUEGO
             function game_over (){
@@ -233,4 +248,4 @@ function click_letras (cambio) {
 
         game_over( );
 
-//TODO CONCATENAR NOMBRE DE USUARIO Y LOS PUNTOS //
+// CONCATENAR NOMBRE DE USUARIO Y LOS PUNTOS //
