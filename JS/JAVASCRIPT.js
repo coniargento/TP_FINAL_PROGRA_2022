@@ -219,6 +219,8 @@ function click_letras (cambio) {
                     id ("perdiste").innerHTML = "GANASTE!!"
 
                     game_over ();
+
+                    cambiodepantallas6();                    
                 }
                     
             console.log ( " la letra " + letra_teclado + " en la palabra "  + palabras_2 + "¿existe?: " + acerto);
@@ -250,21 +252,42 @@ function cambiodepantallas4(){
     document.querySelector("#pantalla2").style.display = "none";
 }
 
-//FUNCIONES CAMBIO DE BOTON-VOLVER A JUGAR A  PANTALLA 2
-function cambiodepantallasboton(){
+//FUNCIONES CAMBIO DE BOTON-VOLVER A JUGAR A  PANTALLA 1
+function cambiodepantallasboton_ganaste(){
     document.querySelector("#pantalla1").style.display = "block";
     document.querySelector("#pantalla4").style.display = "none";
 }
 
 document.getElementById("volver-inicio").onclick = function(){
+    cambiodepantallasboton_ganaste();
+    //OBLIGATORIO PARA QUE NO SE RECARGUE LA PANTALLA
+    return false;
+}
 
-    cambiodepantallasboton();
+//FUNCIONES CAMBIO DE PANTALLA 2-EL JUEGO A 3-PERDISTE
+function cambiodepantallas5(){
+    document.querySelector("#pantalla2").style.display = "none";
+    document.querySelector("#pantalla3").style.display = "block";
+}
+function cambiodepantallas6(){
+    document.querySelector("#pantalla3").style.display = "block";
+    document.querySelector("#pantalla2").style.display = "none";
+}
+
+//FUNCIONES CAMBIO DE BOTON-JUGAR-DENUEVO A PANTALLA 2
+function cambiodepantallasboton_perdiste(){
+    document.querySelector("#pantalla2").style.display = "block";
+    document.querySelector("#pantalla3").style.display = "none";
+}
+
+document.getElementById("jugar-denuevo").onclick = function(){
+    cambiodepantallasboton_perdiste();
     //OBLIGATORIO PARA QUE NO SE RECARGUE LA PANTALLA
     return false;
 }
 
 // FIN DEL JUEGO
-            function game_over (){
+            /*function game_over (){
                 
                 for (i = 0; i< btn_botones.length; i++ ){
 
@@ -275,6 +298,6 @@ document.getElementById("volver-inicio").onclick = function(){
                 btn_obtenerpalabra.disabled = false;
             }
 
-        game_over( );
+        game_over( );*/
 
 //TODO CONCATENAR NOMBRE DE USUARIO Y LOS PUNTOS //
