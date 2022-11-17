@@ -207,7 +207,14 @@ function click_letras (cambio) {
 
                 if ( cant_errores == 8 ) {
 
-                    document.getElementById("perdiste").innerHTML = "PERDISTE, LA PALABRA ERA: " + palabras_2;
+                    id("perdiste").innerHTML = "PERDISTE, LA PALABRA ERA: " + palabras_2;
+
+                    game_over ();
+
+  //ELSE IF //
+             } else if (cant_aciertos == palabras_2.length){
+
+                    id ("perdiste").innerHTML = "GANASTE!!"
 
                     game_over ();
 
