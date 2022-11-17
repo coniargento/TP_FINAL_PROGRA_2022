@@ -181,6 +181,15 @@ span {
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 
+#felicidades {
+    margin-top: -1em;
+    font-size: 30pt;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #ffffff;
+
+}
+
 /*body {
     height: 600px;
     width: auto;
