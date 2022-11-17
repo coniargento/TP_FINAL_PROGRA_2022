@@ -17,9 +17,6 @@ document.getElementById("formulario1").onsubmit = function(){
     return false;
 }
 
-//QUE APAREZCA EL NOMBRE AL LADO DEL PUNTAJE
-document.getElementById("puntos").innerHTML = usuario;
-
 // VARIABLE GLOBAL DE PALABRAS RANDOM (PALABRAS_2)
 
     var palabras_2;
