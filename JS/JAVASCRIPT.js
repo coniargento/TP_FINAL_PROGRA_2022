@@ -91,7 +91,7 @@ console.log(btn_obtenerpalabra);
 
 // FUNCION RANDOM PALABRAS 
 
-function cambiar(cambio){
+function cambiar(){
 
     imagen.src = '../TP_FINAL_PROGRA_2022/IMAGENES/img0.png';
 // propiedad para que el boton se toque una vez sola
@@ -185,8 +185,6 @@ function click_letras (cambio) {
             //SUMARLE 5 PUNTOS SI ACIERTA UNA LETRA
             puntos = puntos + 5;
 
-            document.getElementById("puntos_2").innerHTML = puntos; // INSERTAMOS LOS PUNTOS EN EL HTML
-
             console.error(puntos);
                 acerto = true;
             }
@@ -215,17 +213,21 @@ function click_letras (cambio) {
                 }
                     
             console.log ( " la letra " + letra_teclado + " en la palabra "  + palabras_2 + "¿existe?: " + acerto);
-        }
+        
  
-//PUNTOS
-    if(cant_aciertos === palabras_2.length){
-        // En este punto ya adivino la palabra.
-        alert("Bien ahi amigo, acabas de adivinar la palabra.");
-        cambiar("Esto es inutil");
-    }
-    
-    if(puntos >= 100){
-        alert("Ganaste el juego, baron.");
+        //PUNTOS
+            if(cant_aciertos === palabras_2.length){
+                puntos +=20;
+                // En este punto ya adivino la palabra.
+                alert("Bien ahi amigo, acabas de adivinar la palabra.");
+                cambiar();
+            }
+            
+            if(puntos >= 100){
+                alert("Ganaste el juego, baron.");
+            }
+
+            document.getElementById("puntos_2").innerHTML = puntos; // INSERTAMOS LOS PUNTOS EN EL HTML
     }
 
 // FIN DEL JUEGO
