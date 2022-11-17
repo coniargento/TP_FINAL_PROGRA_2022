@@ -241,6 +241,15 @@ function cambiodepantallas4(){
     document.querySelector("#pantalla2").style.display = "none";
 }
 
+//FUNCIONES CAMBIO DE BOTON-VOLVER A JUGAR A  PANTALLA 2
+document.getElementById("jugar-denuevo").onclick = function(){
+
+    cambiodepantallas4();
+
+    //OBLIGATORIO PARA QUE NO SE RECARGUE LA PANTALLA
+    return false;
+}
+
 // FIN DEL JUEGO
             function game_over (){
                 
