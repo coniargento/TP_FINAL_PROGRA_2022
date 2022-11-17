@@ -281,7 +281,7 @@ function cambiodepantallasboton_perdiste(){
     document.querySelector("#pantalla3").style.display = "none";
 }
 
-document.getElementById("Inicio").onclick = function(){
+document.getElementById("inicio").onclick = function(){
     cambiodepantallasboton_perdiste();
     //OBLIGATORIO PARA QUE NO SE RECARGUE LA PANTALLA
     return false;
