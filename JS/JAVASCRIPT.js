@@ -91,7 +91,7 @@ console.log(btn_obtenerpalabra);
 
 // FUNCION RANDOM PALABRAS 
 
-function cambiar(){
+function cambiar(cambio){
 
     imagen.src = '../TP_FINAL_PROGRA_2022/IMAGENES/img0.png';
 // propiedad para que el boton se toque una vez sola
