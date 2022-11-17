@@ -210,6 +210,13 @@ function click_letras (cambio) {
                     id("perdiste").innerHTML = "PERDISTE, LA PALABRA ERA: " + palabras_2;
 
                     game_over ();
+
+  //ELSE IF //
+             } else if (cant_aciertos == palabras_2.length){
+
+                    id ("perdiste").innerHTML = "GANASTE!!"
+
+                    game_over ();
                 }
                     
             console.log ( " la letra " + letra_teclado + " en la palabra "  + palabras_2 + "¿existe?: " + acerto);
