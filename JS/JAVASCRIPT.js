@@ -233,12 +233,12 @@ function click_letras (cambio) {
 
 //FUNCIONES CAMBIO DE PANTALLA 2-EL JUEGO A 4-GANASTE
 function cambiodepantallas2(){
-    document.querySelector("#pantalla1").style.display = "none";
-    document.querySelector("#pantalla2").style.display = "block";
+    document.querySelector("#pantalla2").style.display = "none";
+    document.querySelector("#pantalla4").style.display = "block";
 }
-function cambiodepantallas2(){
-    document.querySelector("#pantalla2").style.display = "block";
-    document.querySelector("#pantalla1").style.display = "none";
+function cambiodepantallas4(){
+    document.querySelector("#pantalla4").style.display = "block";
+    document.querySelector("#pantalla2").style.display = "none";
 }
 
 // FIN DEL JUEGO
