@@ -83,6 +83,8 @@ var btn_obtenerpalabra = id ('palabra');
 
 var imagen = id('ahorcado');
 
+var btn_letras = document.querySelectorAll ("#letras button");
+
 // FUNCION ASOCIADA A EVENTOS--> ONCLIC ONMOUSEOVER,ETC = ESCUCHADORES DE EVENTOS
 //CLICK EN INICIAR JUEGO!
 btn_obtenerpalabra.addEventListener('click', cambiar );
