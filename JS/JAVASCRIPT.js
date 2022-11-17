@@ -9,7 +9,10 @@ document.getElementById("formulario1").onsubmit = function(){
     //console.log("%holaaaaaa")
     //OBTENGO LA INFO CARGADA
     var usuario = document.getElementById("pedido").value;
-    console.log(usuario);
+    
+    document.getElementById("nombre_ptos").innerHTML = usuario;
+
+    //console.log(usuario);
 
     cambiodepantallas2();
 
@@ -37,7 +40,6 @@ function cambiodepantallas2(){
     document.querySelector("#pantalla2").style.display = "block";
     document.querySelector("#pantalla1").style.display = "none";
 }
-
 
 /*TODO:
 //VARIABLE PARA QUE TE APAREZCA RU NOMBRE EN EL JUEGO
