@@ -208,6 +208,7 @@ function click_letras (cambio) {
             // limite de errores = CAMBIO DE PANTALLA PERDISTE
 
                 if ( cant_errores == 8 ) {
+                    cambiodepantallas6();
 
                     //id("perdiste").innerHTML = "PERDISTE, LA PALABRA ERA: " + palabras_2;
 
