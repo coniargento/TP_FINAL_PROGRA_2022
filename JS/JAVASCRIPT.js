@@ -28,7 +28,7 @@ document.getElementById("formulario1").onsubmit = function(){
     var puntos = 0; // variable puntos usuario
 
 
-//FUNCIONES CAMBIO DE PANTALLA
+//FUNCIONES CAMBIO DE PANTALLA 1 A 2
 function cambiodepantallas1(){
     document.querySelector("#pantalla1").style.display = "none";
     document.querySelector("#pantalla2").style.display = "block";
@@ -219,16 +219,27 @@ function click_letras (cambio) {
             if(cant_aciertos === palabras_2.length){
                 puntos +=20;
                 // En este punto ya adivino la palabra.
-                alert("Bien ahi amigo, acabas de adivinar la palabra.");
+                alert("¡Muy bien acabas de adivinar la palabra!");
                 cambiar();
             }
             
             if(puntos >= 100){
+
                 alert("Ganaste el juego, baron.");
             }
 
             document.getElementById("puntos_2").innerHTML = puntos; // INSERTAMOS LOS PUNTOS EN EL HTML
     }
+
+//FUNCIONES CAMBIO DE PANTALLA 2-EL JUEGO A 4-GANASTE
+function cambiodepantallas2(){
+    document.querySelector("#pantalla1").style.display = "none";
+    document.querySelector("#pantalla2").style.display = "block";
+}
+function cambiodepantallas2(){
+    document.querySelector("#pantalla2").style.display = "block";
+    document.querySelector("#pantalla1").style.display = "none";
+}
 
 // FIN DEL JUEGO
             function game_over (){
@@ -240,7 +251,6 @@ function click_letras (cambio) {
                 }
 
                 btn_obtenerpalabra.disabled = false;
-
             }
 
         game_over( );
