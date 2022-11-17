@@ -207,14 +207,14 @@ function click_letras (cambio) {
 
                 if ( cant_errores == 8 ) {
 
-                    id("perdiste").innerHTML = "PERDISTE, LA PALABRA ERA: " + palabras_2;
+                    //id("perdiste").innerHTML = "PERDISTE, LA PALABRA ERA: " + palabras_2;
 
                     game_over ();
 
   //ELSE IF //
              } else if (cant_aciertos == palabras_2.length){
 
-                    id ("perdiste").innerHTML = "GANASTE!!"
+                    //id ("perdiste").innerHTML = "GANASTE!!"
 
                     game_over ();
 
@@ -285,7 +285,7 @@ document.getElementById("jugar-denuevo").onclick = function(){
 }
 
 // FIN DEL JUEGO
-            /*function game_over (){
+            function game_over (){
                 
                 for (i = 0; i< btn_botones.length; i++ ){
 
@@ -296,6 +296,4 @@ document.getElementById("jugar-denuevo").onclick = function(){
                 btn_obtenerpalabra.disabled = false;
             }
 
-        game_over( );*/
-
-//TODO CONCATENAR NOMBRE DE USUARIO Y LOS PUNTOS //
+        game_over( );
