@@ -277,11 +277,11 @@ function cambiodepantallas6(){
 
 //FUNCIONES CAMBIO DE BOTON-JUGAR-DENUEVO A PANTALLA 2
 function cambiodepantallasboton_perdiste(){
-    document.querySelector("#pantalla2").style.display = "block";
+    document.querySelector("#pantalla1").style.display = "block";
     document.querySelector("#pantalla3").style.display = "none";
 }
 
-document.getElementById("jugar-denuevo").onclick = function(){
+document.getElementById("Inicio").onclick = function(){
     cambiodepantallasboton_perdiste();
     //OBLIGATORIO PARA QUE NO SE RECARGUE LA PANTALLA
     return false;
