@@ -154,6 +154,15 @@ span {
     color: #FFFFFF;
 }
 
+#puntos_2 {
+    font-size: 20px;
+    font-family: tiza;
+    color: #ffffff;
+    text-align: right;
+
+}
+
+
 #nombre_ptos {
     font-size: 20px;
     font-family: tiza;
