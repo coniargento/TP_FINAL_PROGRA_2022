@@ -154,21 +154,30 @@ span {
     color: #FFFFFF;
 }
 
+#nombre_ptos {
+    font-size: 20px;
+    font-family: tiza;
+    color: #ffffff;
+    text-align: right;
+
+}
+
 /* PUNTOS EN LA ESQUINA DERECHA*/
 #puntos{
     font-size: 20px;
     font-family: tiza;
     color: #ffffff;
     text-align: right;
-    position: fixed;
+    padding: 0 0 2em 0;
+/*    position: fixed;*/
 }
 
-#puntos_2{
+/* #puntos_2{
     font-size: 25px;
     font-family: tiza;
     color: #ffffff;
     text-align: right;
-}
+} */
 
 #volver-inicio{
     border-radius: 10px;
