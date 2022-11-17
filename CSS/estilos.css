@@ -60,7 +60,7 @@ h3{
 }
 
 
-#pantalla2, #ganaste, #perdiste {
+#pantalla2, #ganaste, #perdiste, #pantalla4 {
     padding: 0em 100px 260px 120px;
     text-align: center;
     height: 200px;
@@ -182,7 +182,7 @@ span {
 }
 
 #felicidades {
-    margin-top: -1em;
+    margin-top: 4em;
     font-size: 30pt;
     text-align: center;
     margin-bottom: 50px;
